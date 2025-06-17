@@ -1,9 +1,0 @@
-fastapi
-uvicorn
-jinja2
-tensorflow
-sentencepiece
-numpy
-pandas
-matplotlib
-tqdm
