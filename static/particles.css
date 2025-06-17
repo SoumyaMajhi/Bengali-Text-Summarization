@@ -1,0 +1,23 @@
+/* Reset some basic styles */
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* background-color: #0a192f;  Dark background color */
+    /* background-color: rgb(214, 242, 255); */
+}
+  
+  /* .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+  }
+   */
