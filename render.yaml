@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: bengali-text-backend
+    env: docker
+    plan: free
+    branch: backend
+    region: oregon
+    dockerfilePath: Dockerfile
+    buildFilter:
+      paths:
+        - Dockerfile
+        - requirements.txt
+        - main.py
+        - transformer.py
+        - tokenizer/**
+        - weights/**
+        - templates/**
+    autoDeploy: true
