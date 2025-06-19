@@ -20,7 +20,7 @@ A powerful Bengali text summarization web app built with a custom Transformer mo
 
 ## 📸 Demo
 
-> Coming soon! 
+> [https://saranshai.onrender.com](https://saranshai.onrender.com)
 
 ---
 
