@@ -30,6 +30,7 @@ A powerful Bengali text summarization web app built with a custom Transformer mo
 - **FastAPI** - Web framework for serving the app
 - **Jinja2** - HTML template rendering
 - **HTML/CSS/JavaScript/Bootstrap** - Frontend for user input and display
+- **[Render](https://render.com/)** - For Deployment
 
 ---
 
@@ -129,6 +130,20 @@ Check if the server is running.
 - Custom Tokenization on our datasets with SentencePiece (`.model` included in `tokenizer/`)
 
 ---
+
+## 🔧 For Render Deployment
+Set:
+- `Build Command` as `pip install -r requirements.txt`
+- `Start Command` as `uvicorn main:app --host 0.0.0.0 --port 8000`
+
+Set the following environment variables:
+- `PYTHON_VERSION = 3.10.13` (for Tensorflow compatibility)
+- `HOST = 0.0.0.0`
+- `PORT = 8000`
+
+
+
+
 
 ## 🧠 Future Work
 
