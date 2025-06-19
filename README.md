@@ -1,5 +1,7 @@
+# SaranshAI (সারাংশ.ai)
+> বাংলা ভাষার প্রতি ভালোবাসা আর প্রযুক্তির ছোঁয়ায় গড়ে তোলা সহজ উপস্থাপনার গল্প।
 
-# 🧠 Bengali Text Summarizer using Transformer + FastAPI
+## 🧠 Bengali Text Summarizer using Transformer + FastAPI
 
 A powerful Bengali text summarization web app built with a custom Transformer model and served using FastAPI. Input Bengali text and receive a concise, generated summary powered by a deep learning model.
 
@@ -54,7 +56,7 @@ A powerful Bengali text summarization web app built with a custom Transformer mo
 ## ⚡ Quick Start
 
 ### 📁 1. Clone the repository
-```b
+```
 git clone https://github.com/SoumyaMajhi/Bengali-Text-Summarization.git
 cd Bengali-Text-Summarization
 ```
@@ -140,10 +142,7 @@ Set the following environment variables:
 - `PYTHON_VERSION = 3.10.13` (for Tensorflow compatibility)
 - `HOST = 0.0.0.0`
 - `PORT = 8000`
-
-
-
-
+---
 
 ## 🧠 Future Work
 
