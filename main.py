@@ -21,7 +21,7 @@ class TextInput(BaseModel):
     original_text: str
 
 # Serve HTML page
-@app.get("/", response_class=HTMLResponse)
+@app.api_route("/", methods=["GET", "HEAD"], response_class=HTMLResponse)
 async def home(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
@@ -30,6 +30,12 @@ async def home(request: Request):
 async def summarize_text_api(input: TextInput):
     summary = summarize(input.original_text)  # Call your prediction function
     return {"summary": summary}
+
+# Separate route for uptime checks
+@app.get("/health", status_code=200)
+async def health_check():
+    return {"status": "ok"}
+
 
 # Run with: uvicorn main:app --reload
 # http://127.0.0.1:8000
